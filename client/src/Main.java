@@ -16,7 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Socket socket = new Socket("loaclhost",4000);
+            Socket socket = new Socket("localhost",4000);
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             dataOutputStream.writeUTF("Hello I am Client ");
             dataOutputStream.flush();
